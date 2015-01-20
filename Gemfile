@@ -3,8 +3,10 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in guard-kitchen.gemspec
 gemspec
 
+gem "guard"
+gem "mixlib-shellout"
+
 group :test do
-  gem "guard"
   gem "guard-rspec"
   gem "ruby_gntp"
   gem 'rb-inotify', :require => false
